@@ -2,97 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hardeep Singh Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hardeep Singh | Animated Portfolio</title>
+
+  <!-- CSS & Fonts -->
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Cardo:wght@700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <h1>Hardeep Singh</h1>
-    <div class="profile-wrapper">
-      <img src="deep.jpg" alt="Profile Photo">
-<a href="Hardeep.pdf" download class="back-btn">📄 View Full Resume</a>
-    
+
+  <!-- ✅ Hero Section -->
+  <div class="hero-section">
+    <div class="hero-left" data-aos="fade-right">
+      <p class="label">Creative Portfolio</p>
+      <h1>HARDEEP<br>SINGH</h1>
+      <p class="description" id="typed-text"></p>
+     <a href="Hardeep.pdf" class="btn-glow" download>📄 Download Resume</a>
 
     </div>
-    <p>BCA final-year student specializing in web development and cloud technologies. Passionate about creating responsive, user-focused digital experiences using modern tools like ASP.NET, Salesforce, and JavaScript.</p>
-    <a class="header-btn" href="#contact">Let's Connect</a>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/hardeep-singh-5ba483263/" target="_blank">🔗</a>
-      <a href="mailto:ittzdeep231@gmail.com">📧</a>
-      <a href="tel:+919711374840">📞</a>
+    <div class="hero-right" data-aos="fade-left">
+      <img src="deep.jpg" alt="Hardeep Singh" />
     </div>
-  </header>
+  </div>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- ✅ Projects -->
+  <section id="projects" data-aos="zoom-in-up">
+    <center><h2>My Projects 👨‍💻</h2></center>
+   <div class="project-card" data-tilt>
+  <h3>Employee Management System</h3>
+  <p><em>Tech:</em> ASP.NET, SQL Server</p>
+  <p>Built a web app for managing employee leaves and data using GridView and CRUD features.</p>
+  <a href="https://github.com/deep448/Emp_mng_system" target="_blank" class="btn-glow" style="margin-top: 15px; display: inline-block;">
+    🔗 View Project
+  </a>
+</div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Final-year BCA student at Jagannath Community College, Delhi, with hands-on experience in web development and cloud platforms. Skilled in building responsive web apps, managing databases, and applying clean UI/UX principles.</p>
-  </section>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<section id="skills">
-  <h2>Skills Overview</h2>
-  <ul class="skills-list">
-    <li><i class="fab fa-html5"></i> HTML5 / CSS3 / JavaScript</li>
-    <li><i class="fas fa-code"></i> ASP.NET / C#</li>
-    <li><i class="fas fa-cloud"></i> Cloud Computing</li>
-    <li><i class="fas fa-sitemap"></i> Salesforce / Heroku</li>
-    <li><i class="fas fa-database"></i> SQL Server / MySQL</li>
-    <li><i class="fab fa-git-alt"></i> Git & Version Control</li>
-  </ul>
-</section>
-
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-item">
-      <h3>Employee Management System</h3>
-      <p><strong>Tech:</strong> ASP.NET, SQL Server</p>
-      <p>Web app for managing employee data with CRUD features.</p>
-    </div>
-    <div class="project-item">
+    <div class="project-card" data-tilt>
       <h3>Garment Management System</h3>
-      <p><strong>Tech:</strong> C++</p>
-      <p>Console app for inventory and billing using file handling.</p>
+      <p><em>Tech:</em> C++</p>
+      <p>Console-based inventory and billing application using file handling.</p>
     </div>
-    <div class="project-item">
+    <div class="project-card" data-tilt>
       <h3>Salesforce Automation App</h3>
-      <p><strong>Tech:</strong> Salesforce, Heroku</p>
-      <p>Created an app with workflows and deployed it using Heroku.</p>
+      <p><em>Tech:</em> Salesforce, Heroku</p>
+      <p>Created an app with workflows, validation rules, deployed using Heroku.</p>
     </div>
   </section>
 
-  <section id="experience">
-   
-  <h2>Experience & Certifications</h2>
-  <div class="experience-item">
-    <h3>Intern – CodSoft</h3>
-    <p>May – June 2025 | HTML, CSS, JavaScript projects</p>
-  </div>
-  <div class="experience-item">
-    <h3><a href="https://drive.google.com/file/d/1uROfKJaWi4nAnUiKysJrPFsiMG_810AL/view" target="_blank">NPTEL – Cloud Computing (IIT Kharagpur)</a></h3>
-  </div>
-  <div class="experience-item">
-   <h3><a href="http://drive.google.com/file/d/19RN6nkTqTrSTed5KDbLSySQCQxBxc8y2/view" target="_blank">NPTEL – Joy of Computing using Python (IIT Ropar)</a></h3>
+  <!-- ✅ Internships -->
+  <section class="internships" data-aos="fade-left">
+    <h2>Internships 🧪</h2>
+    <p><strong>Web Development Intern – CodSoft</strong> (May – June 2025)</p>
+    <ul>
+      <li>Calculator app (HTML/CSS/JS)</li>
+      <li>Blog website with post features</li>
+      <li>Tribute page for Shaheed Bhagat Singh</li>
+    </ul><section class="certifications" data-aos="fade-right">
+  <h2>Certifications 🎖</h2>
+
+  <div class="certificate-section">
+  
+    <div class="certificate-card">
+      <h3>NPTEL – Cloud Computing (IIT Kharagpur)</h3>
+      <a href="https://drive.google.com/file/d/1uROfKJaWi4nAnUiKysJrPFsiMG_810AL/view?usp=drive_link" target="_blank">
+        <img src="Cloud Computing.jpg" alt="Cloud Computing Certificate" />
+      </a>
+    </div>
+
+    <div class="certificate-card">
+      <h3>NPTEL – Joy of Computing using Python (IIT Ropar)</h3>
+      <a href="https://drive.google.com/file/d/19RN6nkTqTrSTed5KDbLSySQCQxBxc8y2/view?usp=drive_link" target="_blank">
+        <img src="The Joy Of Computing Using Python.jpg" alt="Python Certificate" />
+      </a>
+    </div>
 
   </div>
 </section>
 
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: ittzdeep231@gmail.com</p>
-    <p>Phone: 9711374840</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hardeep-singh-5ba483263/" target="_blank">linkedin.com/in/hardeep-singh</a></p>
+  <!-- ✅ Skills -->
+  <section class="skills" data-aos="flip-up">
+    <h2>Skills</h2>
+    <div class="skill-tags">
+      <span>HTML/CSS</span>
+      <span>ASP.NET</span>
+      <span>Salesforce</span>
+      <span>Cloud Computing</span>
+      <span>MySQL</span>
+    </div>
   </section>
+
+  <!-- ✅ Footer -->
+  <footer data-aos="fade-up" id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 ittzdeep231@gmail.com</p>
+    <p>📞 9711374840</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/hardeep-singh-5ba483263" target="_blank">LinkedIn Profile</a></p>
+  </footer>
+
+  <!-- ✅ JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+      max: 15,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.2,
+    });
+
+    // Typing animation
+    const typedText = [
+      "BCA final-year student specializing in web development and cloud technologies.",
+      "Passionate about building responsive, user-focused experiences.",
+      "Skilled in ASP.NET, Salesforce, JavaScript, and more."
+    ];
+    let lineIndex = 0;
+    let charIndex = 0;
+    const speed = 50;
+    const description = document.getElementById("typed-text");
+
+    function typeLine() {
+      if (lineIndex < typedText.length) {
+        if (charIndex < typedText[lineIndex].length) {
+          description.innerHTML += typedText[lineIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(typeLine, speed);
+        } else {
+          description.innerHTML += "<br>";
+          charIndex = 0;
+          lineIndex++;
+          setTimeout(typeLine, 700);
+        }
+      }
+    }
+    window.addEventListener("DOMContentLoaded", typeLine);
+  </script>
+
 </body>
 </html>
