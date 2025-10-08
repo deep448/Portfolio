@@ -2,145 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hardeep Singh | Animated Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Bootstrap Website</title>
 
-  <!-- CSS & Fonts -->
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Cardo:wght@700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .product-card img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: #ddd;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- ✅ Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- ✅ Hero Section -->
-  <div class="hero-section">
-    <div class="hero-left" data-aos="fade-right">
-      <p class="label">Creative Portfolio</p>
-      <h1>HARDEEP<br>SINGH</h1>
-      <p class="description" id="typed-text"></p>
-     <a href="https://drive.google.com/file/d/1IT3OK3N-wENj0zbyslNWYMe2H4U1KxGr/view?usp=drive_link" class="btn-glow" download>📄 Download Resume</a>
-
-    </div>
-    <div class="hero-right" data-aos="fade-left">
-      <img src="Deep.jpg" alt="Hardeep Singh" />
-    </div>
-  </div>
-
-  <!-- ✅ Projects -->
-  <section id="projects" data-aos="zoom-in-up">
-    <center><h2>My Projects 👨‍💻</h2></center>
-   <div class="project-card" data-tilt>
-  <h3>Employee Management System</h3>
-  <p><em>Tech:</em> ASP.NET, SQL Server</p>
-  <p>Built a web app for managing employee leaves and data using GridView and CRUD features.</p>
-  <a href="https://github.com/deep448/Emp_mng_system" target="_blank" class="btn-glow" style="margin-top: 15px; display: inline-block;">
-    🔗 View Project
-  </a>
-</div>
-
-    <div class="project-card" data-tilt>
-      <h3>Garment Management System</h3>
-      <p><em>Tech:</em> C++</p>
-      <p>Console-based inventory and billing application using file handling.</p>
-    </div>
-    <div class="project-card" data-tilt>
-      <h3>Salesforce Automation App</h3>
-      <p><em>Tech:</em> Salesforce, Heroku</p>
-      <p>Created an app with workflows, validation rules, deployed using Heroku.</p>
+  <section id="home" class="hero d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+      <h1>Welcome to Our Store</h1>
+      <p>High-quality products with modern design & responsive layout.</p>
+      <a href="#products" class="btn btn-primary mt-3">Shop Now</a>
     </div>
   </section>
 
-  <!-- ✅ Internships -->
-  <section class="internships" data-aos="fade-left">
-    <h2>Internships 🧪</h2>
-    <p><strong>Web Development Intern – CodSoft</strong> (May – June 2025)</p>
-    <ul>
-      <li>Calculator app (HTML/CSS/JS)</li>
-      <li>Blog website with post features</li>
-      <li>Tribute page for Shaheed Bhagat Singh</li>
-    </ul><section class="certifications" data-aos="fade-right">
-  <h2>Certifications 🎖</h2>
-
-  <div class="certificate-section">
-  
-    <div class="certificate-card">
-      <h3>NPTEL – Cloud Computing (IIT Kharagpur)</h3>
-      <a href="https://drive.google.com/file/d/1uROfKJaWi4nAnUiKysJrPFsiMG_810AL/view?usp=drive_link" target="_blank">
-        <img src="Cloud Computing.jpg" alt="Cloud Computing Certificate" />
-      </a>
+  <!-- ✅ About Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">About Us</h2>
+      <p class="lead text-muted">
+        We provide premium quality items with the best customer experience. Our website is fully responsive using Bootstrap 5.
+      </p>
     </div>
+  </section>
 
-    <div class="certificate-card">
-      <h3>NPTEL – Joy of Computing using Python (IIT Ropar)</h3>
-      <a href="https://drive.google.com/file/d/19RN6nkTqTrSTed5KDbLSySQCQxBxc8y2/view?usp=drive_link" target="_blank">
-        <img src="The Joy Of Computing Using Python.jpg" alt="Python Certificate" />
-      </a>
+  <!-- ✅ Products Section -->
+  <section id="products" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Our Products</h2>
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card product-card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Product 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Stylish Chair</h5>
+              <p class="card-text text-muted">$120</p>
+              <button class="btn btn-outline-primary w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card product-card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1616627458989-fd9bfa92a6bf?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Product 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Modern Lamp</h5>
+              <p class="card-text text-muted">$85</p>
+              <button class="btn btn-outline-primary w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card product-card shadow-sm">
+            <img src="https://images.unsplash.com/photo-1606813907291-739c97dc4e2b?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Product 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Wooden Table</h5>
+              <p class="card-text text-muted">$199</p>
+              <button class="btn btn-outline-primary w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-  <!-- ✅ Skills -->
-  <section class="skills" data-aos="flip-up">
-    <h2>Skills</h2>
-    <div class="skill-tags">
-      <span>HTML/CSS</span>
-      <span>ASP.NET</span>
-      <span>Salesforce</span>
-      <span>Cloud Computing</span>
-      <span>MySQL</span>
+  <!-- ✅ Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="p-4 shadow rounded bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Write your message"></textarea>
+            </div>
+            <button class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ✅ Footer -->
-  <footer data-aos="fade-up" id="contact">
-    <h2>Contact Me</h2>
-    <p>📧 ittzdeep231@gmail.com</p>
-    <p>📞 9711374840</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/hardeep-singh-5ba483263" target="_blank">LinkedIn Profile</a></p>
+  <footer>
+    <p>© 2025 MyWebsite </p>
   </footer>
 
-  <!-- ✅ JS Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-
-    VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
-      max: 15,
-      speed: 400,
-      glare: true,
-      "max-glare": 0.2,
-    });
-
-    // Typing animation
-    const typedText = [
-      "BCA final-year student specializing in web development and cloud technologies.",
-      "Passionate about building responsive, user-focused experiences.",
-      "Skilled in ASP.NET, Salesforce, JavaScript, and more."
-    ];
-    let lineIndex = 0;
-    let charIndex = 0;
-    const speed = 50;
-    const description = document.getElementById("typed-text");
-
-    function typeLine() {
-      if (lineIndex < typedText.length) {
-        if (charIndex < typedText[lineIndex].length) {
-          description.innerHTML += typedText[lineIndex].charAt(charIndex);
-          charIndex++;
-          setTimeout(typeLine, speed);
-        } else {
-          description.innerHTML += "<br>";
-          charIndex = 0;
-          lineIndex++;
-          setTimeout(typeLine, 700);
-        }
-      }
-    }
-    window.addEventListener("DOMContentLoaded", typeLine);
-  </script>
-
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
