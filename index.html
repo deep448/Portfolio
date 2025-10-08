@@ -4,98 +4,230 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hardeep Singh Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Hardeep Singh</h1>
-    <div class="profile-wrapper">
-      <img src="Deep.jpg" alt="Profile Photo">
-    
-	<a class="resume-btn" href="https://drive.google.com/file/d/1IT3OK3N-wENj0zbyslNWYMe2H4U1KxGr/view?usp=drive_link" target="_blank">📄 View Full Resume</a>
 
-    </div>
-    <p>BCA final-year student specializing in web development and cloud technologies. Passionate about creating responsive, user-focused digital experiences using modern tools like ASP.NET, Salesforce, and JavaScript.</p>
-    <a class="header-btn" href="#contact">Let's Connect</a>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/hardeep-singh-5ba483263/" target="_blank">🔗</a>
-      <a href="mailto:ittzdeep231@gmail.com">📧</a>
-      <a href="tel:+919711374840">📞</a>
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- ✅ Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f8f9fa;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    header {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    nav {
+      background: #212529;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .skills-list li {
+      list-style: none;
+      padding: 10px 0;
+      font-size: 18px;
+    }
+
+    .skills-list i {
+      color: #0d6efd;
+      margin-right: 10px;
+    }
+
+    footer {
+      background: #212529;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ✅ Header Section -->
+  <header class="text-center">
+    <div class="container">
+      <h1 class="fw-bold">Hardeep Singh</h1>
+      <div class="profile-wrapper my-3">
+        <img src="Deep.jpg" alt="Profile Photo" class="img-fluid mb-3">
+        <br>
+        <a class="btn btn-warning" href="https://drive.google.com/file/d/1IT3OK3N-wENj0zbyslNWYMe2H4U1KxGr/view?usp=drive_link" target="_blank">
+          📄 View Full Resume
+        </a>
+      </div>
+      <p class="lead mt-3">
+        BCA final-year student specializing in web development and cloud technologies. Passionate about creating responsive, user-focused digital experiences using modern tools like ASP.NET, Salesforce, and JavaScript.
+      </p>
+      <a class="btn btn-light mt-3" href="#contact">Let's Connect</a>
+      <div class="social-icons mt-4">
+        <a href="https://www.linkedin.com/in/hardeep-singh-5ba483263/" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="mailto:ittzdeep231@gmail.com" class="text-white me-3"><i class="fas fa-envelope fa-lg"></i></a>
+        <a href="tel:+919711374840" class="text-white"><i class="fas fa-phone fa-lg"></i></a>
+      </div>
     </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
+  <!-- ✅ Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Final-year BCA student at Jagannath Community College, Delhi, with strong hands-on experience in both front-end and back-end web development. Proficient in HTML5, CSS3, JavaScript, ASP.NET, and C#, with a passion for building clean, responsive, and scalable web applications. Skilled in working with relational databases such as SQL Server and MySQL, and adept at integrating cloud platforms like Salesforce and Heroku. Demonstrates a strong understanding of UI/UX design principles, accessibility standards, and mobile-first development. Continuously engaged in learning emerging technologies, contributing to real-world projects, and collaborating with peers to deliver impactful digital solutions.</p>
-  </section>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<center>
-<section id="skills">
-  <h2>Skills Overview</h2>
-  <ul class="skills-list">
-    <li><i class="fab fa-html5"></i> HTML5 / CSS3 / JavaScript</li>
-    <li><i class="fas fa-code"></i> ASP.NET / C#</li>
-    <li><i class="fas fa-cloud"></i> Cloud Computing</li>
-    <li><i class="fas fa-sitemap"></i> Salesforce / Heroku</li>
-    <li><i class="fas fa-database"></i> SQL Server / MySQL</li>
-    <li><i class="fab fa-git-alt"></i> Git & Version Control</li>
-  </ul>
-</section>
-
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-item">
-      <h3>Employee Management System</h3>
-      <p><strong>Tech:</strong> ASP.NET, SQL Server</p>
-      <p>Web app for managing employee data with CRUD features.</p>
-    </div>
-    <div class="project-item">
-      <h3>Garment Management System</h3>
-      <p><strong>Tech:</strong> C++</p>
-      <p>Console app for inventory and billing using file handling.</p>
-    </div>
-    <div class="project-item">
-      <h3>Salesforce Automation App</h3>
-      <p><strong>Tech:</strong> Salesforce, Heroku</p>
-      <p>Created an app with workflows and deployed it using Heroku.</p>
+  <!-- ✅ About Section -->
+  <section id="about" class="bg-white text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">About Me</h2>
+      <p class="lead">
+        Final-year BCA student at Jagannath Community College, Delhi, with strong hands-on experience in both front-end and back-end web development.
+        Proficient in HTML5, CSS3, JavaScript, ASP.NET, and C#, with a passion for building clean, responsive, and scalable web applications.
+      </p>
+      <p>
+        Skilled in SQL Server, MySQL, Salesforce, and Heroku. Adept at UI/UX design principles, accessibility standards, and mobile-first development.
+      </p>
     </div>
   </section>
 
-  <section id="experience">
-   
-  <h2>Experience & Certifications</h2>
-  <div class="experience-item">
-    <h3>Intern – CodSoft</h3>
-    <p>May – June 2025 | HTML, CSS, JavaScript projects</p>
-  </div>
-  <div class="experience-item">
-    <h3><a href="https://drive.google.com/file/d/1uROfKJaWi4nAnUiKysJrPFsiMG_810AL/view" target="_blank">NPTEL – Cloud Computing (IIT Kharagpur)</a></h3>
-  </div>
-  <div class="experience-item">
-   <h3><a href="http://drive.google.com/file/d/19RN6nkTqTrSTed5KDbLSySQCQxBxc8y2/view" target="_blank">NPTEL – Joy of Computing using Python (IIT Ropar)</a></h3>
-
-  </div>
-</section></center>
-
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: ittzdeep231@gmail.com</p>
-    <p>Phone: 9711374840</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hardeep-singh-5ba483263/" target="_blank">linkedin.com/in/hardeep-singh</a></p>
+  <!-- ✅ Skills Section -->
+  <section id="skills" class="bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Skills Overview</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-6"><i class="fab fa-html5 fa-2x text-primary"></i><p>HTML5 / CSS3 / JavaScript</p></div>
+        <div class="col-md-4 col-6"><i class="fas fa-code fa-2x text-primary"></i><p>ASP.NET / C#</p></div>
+        <div class="col-md-4 col-6"><i class="fas fa-cloud fa-2x text-primary"></i><p>Cloud Computing</p></div>
+        <div class="col-md-4 col-6"><i class="fas fa-sitemap fa-2x text-primary"></i><p>Salesforce / Heroku</p></div>
+        <div class="col-md-4 col-6"><i class="fas fa-database fa-2x text-primary"></i><p>SQL Server / MySQL</p></div>
+        <div class="col-md-4 col-6"><i class="fab fa-git-alt fa-2x text-primary"></i><p>Git & Version Control</p></div>
+      </div>
+    </div>
   </section>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ✅ Projects Section -->
+  <section id="projects" class="bg-white text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h5 class="card-title">Employee Management System</h5>
+              <p><strong>Tech:</strong> ASP.NET, SQL Server</p>
+              <p>Web app for managing employee data with CRUD features.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h5 class="card-title">Garment Management System</h5>
+              <p><strong>Tech:</strong> C++</p>
+              <p>Console app for inventory and billing using file handling.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h5 class="card-title">Salesforce Automation App</h5>
+              <p><strong>Tech:</strong> Salesforce, Heroku</p>
+              <p>Created an app with workflows and deployed it using Heroku.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Experience Section -->
+  <section id="experience" class="bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Experience & Certifications</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="mb-3">
+            <h5>Intern – CodSoft</h5>
+            <p>May – June 2025 | HTML, CSS, JavaScript projects</p>
+          </div>
+          <div class="mb-3">
+            <h5><a href="https://drive.google.com/file/d/1uROfKJaWi4nAnUiKysJrPFsiMG_810AL/view" target="_blank">NPTEL – Cloud Computing (IIT Kharagpur)</a></h5>
+          </div>
+          <div>
+            <h5><a href="http://drive.google.com/file/d/19RN6nkTqTrSTed5KDbLSySQCQxBxc8y2/view" target="_blank">NPTEL – Joy of Computing using Python (IIT Ropar)</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Contact Section -->
+  <section id="contact" class="bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Contact Me</h2>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:ittzdeep231@gmail.com" class="text-white">ittzdeep231@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919711374840" class="text-white">9711374840</a></p>
+      <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/hardeep-singh-5ba483263/" target="_blank" class="text-white">linkedin.com/in/hardeep-singh</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="mb-0">&copy; 2025 Hardeep Singh. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
